@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Contato</title>
+</head>
+<body>
+
+    <h1>Contato</h1>
+
+    <form method="post" action="http://hub.fatecrl.edu.br/sobrino/recebe-v2.php"> <!-- encapsula dos dados sem que o usuário veja-->
+       
+        <p><label for="nome"><b> Nome:</b></label><br>
+        <!--INPUT - Elemento n pareado, ele tem tag de fechamento-->
+        <input type="text" name="nome" id="nome" size="30" maxlength="30" placeholder="Nome"> <!-- linkar label for nome e id nome torna acessivel para cegos, pq quando se cliaa no nome, se le "NOME" e entra dentro da caixa para digitar-->
+        
+       
+        </p>
+
+        <p>
+            <label for="senha"><b> Senha: </b></label><br>
+            <input type="password" name="senha" id="senha" size="8" maxlength="08" placeholder="Senha" required>
+        
+        </p>
+        <p>
+            <label for="mensagem"><b>Mensagem</b></label><br>
+            <textarea name="name" id="mensagem" rows="5" cols="35"></textarea>
+        </p>
+
+        <p>
+            <label for="cidade"><b>Cidade</b></label><br>
+            <select name="cidade" id="cidade" required>
+                <option value="">Selecione...</option> <!-- nao deixar o option sem value-->
+                <option value="BT">Bertioga</option>
+                <option value="CBT">Cubatão </option>
+                <option value="GR">Guarujá</option>
+                <option value="IT">Itanhaém</option>
+                <option value="MN">Mongaguá</option>
+                <option value="PR">Peruibe </option>
+                <option value="PG">Praia Grande</option>
+                <option value="ST">Santos </option>
+                <option value="SV">São Vicente </option>
+            
+            </select>
+        </p>
+        <p>
+            <!--botão de radio são as bolinhas
+                checkbox são os retangulos que da pra selecionar-->
+
+            <fieldset>
+                <legend><b> Você estuda na Fatec?</b></legend>
+                
+                <!--botão de sim-->
+                <input type="radio" name="aluno-fatec"  id="aluno-fatec-n" value="S" required>
+                <label for="aluno-fatec-s">Sim</label>
+
+                <!--botão de não-->
+                <input type="radio"name="aluno-fatec" id="aluno-fatec-n" value="N">
+                <label for="aluno-fatec-n"></label>Não</label>
+
+            </fieldset>
+
+            <fieldset>
+                <legend><b>Quais suas Linguagens favoritas </b></legend>
+                <input type="checkbox" name="linguagem[]" id="linguagem-cs" value="cs"> 
+                <label for="linguagem-cs">C#</label>
+                
+                <input type="checkbox"  name="linguagem[]" id="linguagem-hc" value="hc">
+                <label for="linguagem-hc">HTML/CSS</label>
+                
+                <input type="checkbox"  name="linguagem[]" id="linguagem-pt" value="py">
+                <label for="linguagem-pt">Python</label>
+
+                <input type="checkbox"  name="linguagem[]" id="linguagem-js" value="js">
+                <label for="linguagem-js">JavaScript</label>
+            </fieldset>
+
+
+                
+        </p>
+        
+        <p>
+            <!--<input type="submit" value="Enviar">  botão -> submit quer dizer que vai mandar pra algum lugar-->
+            <!-- <input type="reset" value="Limpar dados">  Sobrino não recomenda usar-->
+
+            <button>Enviar</button> <!--modo contemporaneo de fazer-->
+        </p>
+
+        <!-- size="8" : tamanho da caixa
+         maxlength: max de caracteres
+         placeholder: vai aparecer dentro da caixa o "nome" e "senha" 
+         password n é criptografia-->
+    </form>
+    
+</body>
+</html>

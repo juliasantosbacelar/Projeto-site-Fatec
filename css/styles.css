@@ -1,0 +1,158 @@
+/*folha de estilos externa criada em 09/09*/
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund+Guides&display=swap');
+
+
+
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size:18px;/*tamanho universal*/
+  background-color: #fff; 
+  color: #000;
+  background-image: url(imgs/fundo.png);
+  padding-left: 30px;
+  background-repeat: repeat-y;
+}
+
+h1, a{
+  color: #1f455c;
+  
+}
+
+a{ /*seletor de tipos*/
+ /*color: #0472b7;*/
+  font-weight: bold;
+  text-decoration: none;
+ 
+}
+a:hover{
+  color:#1f455c;
+  text-decoration: underline;
+
+  /*Elemento recebendo "duas ordens" ele vai usar a última ou a direto*/
+
+  /*pseudoclasse, sempre começam com :*/
+
+}
+h1{
+  font-size: 30px;
+  /*
+  font-size: 28px;
+  text-align: justify;
+  font-weight: normal;*/
+}
+
+h2{
+  color: #A02C2C;
+  font-size: 25px;
+  text-align: justify;
+  margin-bottom: 25px;
+  border-bottom:#0472b7 solid 4px;
+}
+
+p{
+  line-height: 27px;
+}
+
+address{
+    
+    color: black;
+}
+
+img{
+  float: right;
+  margin: 8px 0 0 15px;
+  border-style: solid;
+  border-color: #1f455c;
+  border-width: 4px; /* shorthand - abreviação --> 15px 0px 15 embaixo e em cima, 0 dos lados*/
+  padding: 10px;
+}
+
+table{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border: 3px solid  #1f455c;
+  padding: 10px;
+  font-size: 19px;
+  border-radius: 5px;
+  border-collapse: collapse;
+  width:50%;
+}
+
+
+
+
+th{
+  text-align: left;
+  background-color: #A02C2C;
+  padding: 10px;
+  border: 3px solid #D2D4D6;
+  color: white;
+}
+
+td{
+  
+ border: 3px solid #D2D4D6;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+  border-collapse: collapse ;
+}
+
+th:hover{
+  background-color: #A03A3C;
+  color: white;
+   transition: 0.2s;
+}
+
+tr:hover{
+  background-color:#D2D4D6;
+  color: white;
+   transition: 0.2s;
+}
+caption{
+  font-weight: bold;
+  margin-bottom: 5px;
+  background-color: darkblue;
+  padding: 15px;
+  color: white;
+  border-radius: 10px;
+}
+
+.imagem-destaque{
+  float: left;
+  margin: 8px 15px 0 0;
+  
+}
+
+.imagem-especial{
+  border:4px solid #A02C2C;
+
+}
+
+.linha-alternada{
+  background-color: #f9fafb;
+}
+
+.texto-urgente{
+
+  color:#A02C2C;
+}
+.classe{
+  background-color: pink;
+}
+
+.id{
+  background-color: darkkhaki /*!important*/;
+}
+
+/*:link    -> não visitado
+  :visited -> visitados
+  :active  ->
+  :hover   ->
+  
+*/
+
+/*#nome {
+  color:white;
+  width: 130px;
+}*/
