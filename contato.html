@@ -77,10 +77,83 @@
                 <label for="linguagem-js">JavaScript</label>
             </fieldset>
 
+            <h2> Outros controles</h2>
+            <p>
+                <label for="nota"><b>Nota</b></label>
+                <br>
+                <input type="number" name="" id="nota" step="0.5" min="0" max="10">
+            </p>
+            <p>
+                <label for="email"><b>Email</b></label>
+                <br>
+                <input type="email" name="email" id="email">
+            </p>
+            <p>
+                <label for="url-rs"><b>URL da rede social</b></label>
+                <br>
+                <input type="url" name="url-rs" id="url-rs">
+            </p>
+            <p>
+                <label for="satisfacao"><b>Nível de satisfação </b></label>
+                <br>
+                <input type="range" name="satisfacao" id="satisfacao" min="0" max="10">
+            </p>
+            <p>
+                <label for="cor"><b>Cor favorita</b></label>
+                <br>
+                <input type="color" name="cor" id="cor">
+            </p>
+            <p>
+            <label for="busca"><b>Busca</b></label>
+            <br>
+            <input type="search" name="busca" id="busca">
+        </p>
+
+        <p>
+            <label for="data">data</label>
+            <br>
+            <input type="date" name="data" id="data">
+        </p>
+        <p>
+            <label for="time">Tempo</label>
+            <br>
+            <input type="time" name="time" id="time">
+        </p>
+        <p>
+            <label for="dataehora">Data e hora</label>
+            <br>
+            <input type="datetime-local" name="dataehora" id="dataehora">
+        </p>
+        <p>
+            <label for="mes">Mês</label>
+            <br>
+            <input type="month" name="mes" id="mes">
+
+        </p>
+         <p>
+            <label for="semana">semana</label>
+            <br>
+            <input type="week" name="semana" id="semana">
+
+        </p>
+        <p>
+            <label for="foto">foto</label>
+            <br>
+            <input type="file" name="foto" id="foto" accept="image/jpeg, image/png, image/jpg">
+
+        </p>
+
 
                 
         </p>
         
+        <input type="hidden" name="codigo-promocional" value="PROMO1-2-2025-30">
+
+        <p>
+                <label for="cep">CEP</label>
+                <input type="text" name="cep" id="cep" pattern="[0-9]{5}-[0-9]{3}" placeholder="00000-000">
+
+        </p>
         <p>
             <!--<input type="submit" value="Enviar">  botão -> submit quer dizer que vai mandar pra algum lugar-->
             <!-- <input type="reset" value="Limpar dados">  Sobrino não recomenda usar-->
