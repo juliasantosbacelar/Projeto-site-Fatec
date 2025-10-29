@@ -6,6 +6,7 @@
 
 
 <h2> Home Page </h2>
-<img width="1854" height="947" alt="image" src="https://github.com/user-attachments/assets/d9e67881-bb13-48b6-a7f0-24fb9f4a4e68" />
+<img width="1849" height="912" alt="image" src="https://github.com/user-attachments/assets/2e48227f-b8dd-4a25-a6fe-ceb214d2751e" />
+
 
 
